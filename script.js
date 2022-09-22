@@ -52,6 +52,7 @@ function reset() {
   btns.forEach((btn) => {
     btn.textContent = "";
     btn.classList.remove("change");
+    btn.classList.remove("win");
   });
 }
 
