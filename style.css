@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "paint", sans-serif;
+}
+@font-face {
+  font-family: paint;
+  src: url("./Paint\ On\ The\ Wall.ttf");
+}
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  background-color: #121313;
+  color: white;
+}
+main {
+  background-color: #121212;
+  color: white;
+  width: 520px;
+  display: grid;
+  grid-template-columns: 100px 300px 100px;
+  box-shadow: 0.2rem 0.3rem 0.4rem 0.2rem seagreen;
+  place-content: centre;
+  align-items: center;
+  margin: 1rem auto;
+  gap: 1rem;
+  padding: 1rem;
+}
+.left,
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.centre {
+  display: grid;
+  color: white;
+  height: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 0.2rem;
+}
+.btn {
+  background-color: transparent;
+  padding: 2rem;
+  font-size: 1.4rem;
+  color: white;
+}
+.btn:hover {
+  box-shadow: 0 0 0.2rem 0.2rem;
+}
+.reset {
+  grid-column: 1/4;
+  width: 200px;
+  margin: auto;
+  padding: 1rem;
+  box-shadow: 0 0 0.2rem 0.2rem silver;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.console {
+  grid-column: 1/4;
+  margin: auto;
+  font-size: 1.5rem;
+}
+.change {
+  background-color: white;
+  border-radius: 10px;
+  color: #121212;
+  animation: warp 0.5s ease;
+}
+.win {
+  background: dodgerblue;
+  color: white;
+  animation: appear 0.5s ease;
+}
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.chance {
+  font-size: 2rem;
+  grid-column: 1/4;
+  margin: auto;
+}
+
+@keyframes warp {
+  from {
+    scale: 0;
+  }
+  to {
+    scale: 1;
+  }
+}
