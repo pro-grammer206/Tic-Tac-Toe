@@ -53,6 +53,7 @@ function reset() {
     btn.textContent = "";
     btn.classList.remove("change");
     btn.classList.remove("win");
+    btn.disabled=false
   });
 }
 
